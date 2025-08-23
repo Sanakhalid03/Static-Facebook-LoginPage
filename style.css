@@ -1,0 +1,265 @@
+body {
+  background-color: rgb(242, 244, 247);
+  font-family: Helvetica, Arial, sans-serif;
+}
+#big {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+#box1 {
+  width: 40%;
+  height: 40vh;
+  margin-left: 160px;
+  margin-top: 170px;
+}
+.h1 {
+  height: 16vh;
+  width: 80%;
+
+  background-image: url("fb.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.h2 {
+  height: 15vh;
+  width: 92%;
+  margin-left: 25px;
+}
+.h2 p {
+  display: inline;
+  color: rgb(28, 30, 33);
+  font-size: 27px;
+  font-weight: 400;
+}
+
+#box2 {
+  width: 29.5%;
+  height: 55vh;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 8px;
+  margin-left: 45px;
+  margin-top: 120px;
+}
+.forget {
+  width: 91%;
+  height: 8vh;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 10px;
+  border-bottom: 1px solid #dadde1;
+  margin-left: 15px;
+}
+.forget:hover {
+  text-decoration: underline;
+  text-decoration-color: #0866ff;
+  cursor: pointer;
+}
+.forget p {
+  display: inline;
+  color: #0866ff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.same {
+  width: 92.5%;
+  height: 8vh;
+  border: 1px solid #dddfe2;
+  color: rgb(29, 33, 41);
+  border-radius: 6px;
+  margin-left: 1.1vw;
+  margin-top: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.in1 {
+  width: 92.5%;
+  height: 8vh;
+  border: 1px solid #dddfe2;
+  color: white;
+  border-radius: 6px;
+  margin-left: 1.1vw;
+  margin-top: 15px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 20px;
+  background-color: #0866ff;
+  font-weight: 600;
+  transition: 0.2s ease-in;
+}
+.in1:hover {
+  background-color: #0867ffd5;
+  cursor: pointer;
+}
+.in2 {
+  width: 50%;
+  height: 8vh;
+  border: 1px solid #dddfe2;
+  color: white;
+  border-radius: 6px;
+  margin-left: 7.5vw;
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #42b72a;
+  font-weight: 600;
+  transition: 0.2s ease-in;
+}
+.in2:hover {
+  background-color: #379125;
+  cursor: pointer;
+}
+#txt {
+  width: 40%;
+  height: 10vh;
+  margin-top: 30px;
+  margin-left: 58.5vw;
+}
+#txt p {
+  font-size: 14px;
+}
+a {
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/*Responsiveness*/
+
+/* --- Laptops & smaller desktops --- */
+@media (max-width: 1200px) {
+  #box1 {
+    margin-left: 80px;
+    margin-top: 170px;
+  }
+  #box2 {
+    width: 35%;
+    margin-left: 30px;
+    margin-top: 120px;
+  }
+  #txt {
+    margin-left: 52.5vw;
+  }
+  .in2 {
+    margin-left: 9vw;
+  }
+}
+
+/* --- Tablets --- */
+@media (max-width: 992px) {
+  #big {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #box1 {
+    width: 80%;
+    margin: 15px auto 10px auto;
+    height: auto;
+  }
+  .h1 {
+    margin: 0 auto;
+    width: 250px;
+    height: 60px;
+  }
+  .h2 {
+    margin: 10px auto 1px;
+    width: 90%;
+  }
+  #box2 {
+    width: 70%;
+    margin: 0px auto;
+  }
+  .same {
+    margin-left: 0.2vw;
+  }
+  .in1 {
+    margin-left: 0.2vw;
+  }
+  .in2 {
+    margin-left: 1vw;
+  }
+  #txt {
+    margin: 20px auto;
+    text-align: center;
+    width: 90%;
+  }
+}
+
+/* --- Mobile --- */
+@media (max-width: 600px) {
+  #big {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  #box1 {
+    width: 100%;
+    margin: 20px auto 10px auto;
+    text-align: center;
+  }
+  .h1 {
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+  }
+  .h2 {
+    width: 95%;
+    margin: 10px auto;
+  }
+  .h2 p {
+    font-size: 19.5px;
+  }
+  #box2 {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px 0;
+    height: 50vh;
+  }
+  .same,
+  .in1,
+  .in2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .in2 {
+    margin-top: 20px;
+  }
+  #txt {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  #txt p {
+    font-size: 13px;
+  }
+}
+
+/* --- Very Small Devices --- */
+@media (max-width: 350px) {
+  #box2 {
+    height: 47vh;
+  }
+  .h1 {
+    width: 160px;
+    height: 40px;
+  }
+  .h2 p {
+    font-size: 16px;
+  }
+  .same,
+  .in1,
+  .in2 {
+    font-size: 14px;
+    height: 7vh;
+  }
+}
